@@ -1,0 +1,58 @@
+data: {
+    lat: 34.86,
+    lon: 32.72,
+    timezone: 'Asia/Nicosia',
+    timezone_offset: 10800,
+    current: {
+      dt: 1657221765,
+      sunrise: 1657161707,
+      sunset: 1657213549,
+      temp: 21.47,
+      feels_like: 21,
+      pressure: 1007,
+      humidity: 51,
+      dew_point: 10.92,
+      uvi: 0,
+      clouds: 0,
+      visibility: 10000,
+      wind_speed: 1.23,
+      wind_deg: 276,
+      wind_gust: 1.77,
+      weather: [ { id: 800, main: 'Clear', description: 'clear sky', icon: '01d' } ]
+    },
+    minutely: [
+      [Object], [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object], [Object],
+      [Object]
+    ],
+    hourly: [
+      [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object]
+    ],
+    daily: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ]
+  }
