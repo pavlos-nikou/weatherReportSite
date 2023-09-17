@@ -33,8 +33,9 @@ console.log(elipse.endsX);
 
 let points = [];
 let prevStep = -Math.floor(elipse.endsX)+5;
-for (let i = 0; i < 10; i++) {
+const stepNum = 16;
+for (let i = 0; i < stepNum; i++) {
     points.push(prevStep);
-    prevStep = Math.floor(prevStep+elipse.step(25));
+    prevStep = Math.floor(prevStep+elipse.step(stepNum));
 }
 console.log(points);
