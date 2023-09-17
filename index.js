@@ -56,7 +56,7 @@ const getIconsUrls = (hourly) => {
     hourly.forEach(hour => {
         hour.weather[0].icon = `http://openweathermap.org/img/wn/${hour.weather[0].icon}@2x.png`
     });
-    return hourly
+    return hourly;
 }
 
 app.get("/", async (req, res) => {
@@ -71,10 +71,11 @@ app.get("/", async (req, res) => {
         windSpeed: current.wind_speed,
         windDeg: current.wind_deg,
         windGust: current.wind_gust,
-        main: current.weather[0].main,
-        hourly: getIconsUrls(report.data.hourly)
+        main: current.weather[0].main
+        // hourly: getIconsUrls(report.data.hourly)
     }
-    res.render("home", { data: data })
+    // res.render("home", { data: data })
+    res.send(data)
 })
 
 app.listen(3000, () => {

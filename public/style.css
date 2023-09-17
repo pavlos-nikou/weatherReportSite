@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+#backgroundImage {
+    position: absolute;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 101vh;
+    z-index: 1;
+}
+
+#weatherContainer {
+    position: relative;
+    left: 20%;
+    top: 20vh;
+    z-index: 2;
+    width: 60vw;
+    height: 40vh;
+    /* border: 5px solid rgba(255,255,255,0.9); */
+    border-radius: 40px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 6px 6px rgba(255, 255, 255, 0.9),
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff;
+    
+}
+
+.topContainer {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+}
+
+.weatherIconContainer,
+.weatherContainer,
+.windContainer {
+    /* width: 100%; */
+    border: 1px solid red;
+}
+
+
+.tempContainer {
+    border: 2px solid black;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tempContainer .tempNum {
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+    font-family: 'Lato', sans-serif;
+    font-size: 7em;
+    color: white;
+    padding: 0;
+    margin: 0;
+    border: 1px solid green;
+}
+
+.tempGauge span {
+    position: relative;
+    top: 0.7em;
+    left: 1em;
+    font-size: 4em;
+    color: white;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+    border: 1px solid blue;
+}
+
+/* tempGauge */
+.tempGauge {
+    font-size: 7px;
+    position: relative;
+    width: 45px;
+    border: 1px solid red;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.glassUpper {
+    position: relative;
+    width: 1em;
+    height: 10em;
+    border-top: 0.3em solid white;
+    border-left: 0.3em solid white;
+    border-right: 0.3em solid white;
+    border-top-left-radius: 0.7em;
+    border-top-right-radius: 0.7em;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+    border-bottom: -30px;
+}
+
+.glassLower {
+    position: relative;
+    right: 1em;
+    bottom: 0.2em;
+    width: 3em;
+    height: 3em;
+    border-bottom: 0.3em solid white;
+    border-left: 0.3em solid white;
+    border-right: 0.3em solid white;
+    border-top: 0.3em solid white;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.50);
+    background-color: red;
+}
+
+.glassUpper .temp {
+    position: absolute;
+    bottom: 0;
+    background-color: red;
+    height: 3em;
+    width: 1em;
+    z-index: 2;
+}
+
+/* weather Icon */
+.weatherIconContainer {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.windContainer {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.windContainer .arrow {
+    height: 100%;
+}
+
+.windContainer .windSpeed {
+    font-family: 'Lato', sans-serif;
+    font-size: 3em;
+    color: white;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.50);;
+}
+
+
+.sunriseSunsetContainer {
+    border: 1px solid purple;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}   
