@@ -35,6 +35,6 @@ let points = [];
 let prevStep = -Math.floor(elipse.endsX)+5;
 for (let i = 0; i < 10; i++) {
     points.push(prevStep);
-    prevStep = Math.floor(prevStep+elipse.step(10));
+    prevStep = Math.floor(prevStep+elipse.step(25));
 }
 console.log(points);
